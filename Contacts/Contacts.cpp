@@ -2,6 +2,8 @@
 #include <sstream>
 
 
+std::size_t Contacts::mNumber = 1;
+
 
 Contacts::Contacts()
 {
@@ -84,6 +86,15 @@ Contacts & Contacts::operator=(Contacts && rhs)
     return *this;
 }
 
+
+/************************************************************************/
+/* @brief:get&set                                                       */
+/************************************************************************/
+
+std::size_t Contacts::getNumber() {
+    return mNumber;
+}
+
 std::string Contacts::getDepartment() {
     return mDepartment;
 }
@@ -97,25 +108,12 @@ std::string Contacts::getDepartment() {
      return mPosition;
  }
 
- //std::string Contacts::getOffice()
- //{
- //    return mOffice;
- //}
 
  std::string Contacts::getPhone()
  {
      return mPhone;
  }
 
- //std::string Contacts::getSystemNumber()
- //{
- //    return mSystemNumber;
- //}
-
- //std::string Contacts::getHomeNumber()
- //{
- //    return mHomeNumber;
- //}
 
  std::string Contacts::getMobile()
  {
@@ -143,4 +141,14 @@ std::string Contacts::getDepartment() {
 
 Contacts::~Contacts()
 {
+}
+
+bool operator<(const Contacts & lhs, const Contacts & rhs)
+{
+    return lhs.mNumber< rhs.mNumber;
+}
+
+bool operator==(const Contacts & lhs, const Contacts & rhs)
+{
+    return lhs.mNumber == rhs.mNumber;
 }

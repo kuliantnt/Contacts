@@ -28,6 +28,7 @@ public:
     /************************************************************************/
     /* @brief:get&set                                                       */
     /************************************************************************/
+    std::size_t getNumber();
     std::string getDepartment();
     std::string getName();
     std::string getPosition();
@@ -36,7 +37,13 @@ public:
     std::string getVitrual();
     void print();
     ~Contacts();
+    /************************************************************************/
+    /* @brief:compare                                                       */
+    /************************************************************************/
+    friend bool operator<(const Contacts& lhs, const Contacts& rhs);
+    friend bool operator==(const Contacts& lhs, const Contacts& rhs);
 private:
+    static std::size_t mNumber;
     std::string mDepartment;//部门
     std::string mName;//姓名
     std::string mPosition;//职位

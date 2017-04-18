@@ -117,9 +117,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="AccessContacts.h" />
     <ClInclude Include="Contacts.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="access.cpp" />
+    <ClCompile Include="AccessContacts.cpp" />
     <ClCompile Include="Contacts.cpp" />
     <ClCompile Include="临时用_（任务已经完成）.cpp" />
   </ItemGroup>

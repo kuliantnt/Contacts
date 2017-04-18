@@ -18,12 +18,21 @@
     <ClInclude Include="Contacts.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="AccessContacts.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Contacts.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="临时用_（任务已经完成）.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="access.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AccessContacts.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
