@@ -21,6 +21,9 @@
     <ClInclude Include="AccessContacts.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="ContactsPtr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Contacts.cpp">
@@ -33,6 +36,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="AccessContacts.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ContactsPtr.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

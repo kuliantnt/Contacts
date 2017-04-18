@@ -11,14 +11,17 @@
 //          Á³Á³(kuliantnt@gmail.com)
 //===============================================================
 #pragma once
-#include "Contacts.h"
+#include "ContactsPtr.h"
 #include <unordered_map>
 class AccessContacts
 {
 public:
     AccessContacts();
+    AccessContacts(const AccessContacts& src);
+    AccessContacts(AccessContacts&& src);
+    AccessContacts& operator=(const AccessContacts& rhs);
+    AccessContacts& operator=(AccessContacts&& rhs);
     ~AccessContacts();
 private:
-    std::unordered_map<std::string, AccessContacts*> mMap;
+    std::unordered_map<std::string, ContactsPtr> mMap;
 };
-
